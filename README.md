@@ -1,4 +1,10 @@
-#Software for USB KVM. 
+#Software for USB KVM.
+Use laptops keaybord, mouse and screen to controll other PC. 
+Completley seethrough for other PC without any instalation.
+
+Two usb cables and HDMI cable is required to run. 
+
+For the imaptatient: 
 ## Instalation
 Run 
 ```
@@ -15,6 +21,14 @@ The mouse is kept in top left corner while capturing.
 
 To end the streaming (and a lock) press "CTRL q" (controll + q)
 
+
+## Overview
+Device based on omnipresent video [capture card](https://www.levnoshop.cz/nabijecky-a-adaptery/adapter-usb-hdmi-pro-video-snimani/) which streams video to your computer to display (Shows as a USB webcam).
+With RP2040 zero and USB to serial adapter it can capture your keayboard and mouse to the other PC.
+This gives you ability to use your laptops keyboard touchad and screen to controll other computers. 
+Does not require any setup from slave PC and works even in bios. 
+
+The master computer runs a script locking its keayboard and mause that is than send over serial to RP2040 Zero which acts as a HID for the slave. 
 
 ## Dependencies for runing pure script
 Runnable compiled script is available. 
